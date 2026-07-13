@@ -23,7 +23,7 @@ const INFO = [
     icon: Phone,
     label: "اتصل بنا",
     value: BRAND.phone,
-    href: `tel:${BRAND.phone}`,
+    href: `tel:${BRAND.phoneRaw}`,
   },
   {
     icon: MessageCircle,

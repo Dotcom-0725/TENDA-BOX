@@ -17,7 +17,9 @@ export type SiteIconName =
 export interface BrandProfile {
   name: string;
   tagline: string;
+  owner: string;
   phone: string;
+  phoneRaw: string;
   whatsapp: string;
   location: string;
   email: string;

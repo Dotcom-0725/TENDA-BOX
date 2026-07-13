@@ -69,7 +69,7 @@ export default function Footer() {
             <ul className="mt-4 space-y-3">
               <li>
                 <a
-                  href={`tel:${BRAND.phone}`}
+                  href={`tel:${BRAND.phoneRaw}`}
                   className="flex items-center gap-3 text-sm text-white/60 transition-colors hover:text-gold-soft"
                 >
                   <Phone className="h-4 w-4 text-gold" /> {BRAND.phone}
@@ -117,10 +117,12 @@ export default function Footer() {
 
         <div className="mt-12 flex flex-col items-center justify-between gap-4 border-t border-white/10 pt-6 text-center sm:flex-row sm:text-start">
           <p className="text-xs text-white/40">
-            © {new Date().getFullYear()} TENDA BOX 8Q. جميع الحقوق محفوظة.
+            © {new Date().getFullYear()} TENDA BOX 8Q · جميع الحقوق محفوظة.
           </p>
           <p className="text-xs text-white/40">
-            صُمم بعناية لخدمة عملاء طنجة بأعلى معايير الجودة.
+            بإشراف{" "}
+            <span className="font-semibold text-gold-soft">{BRAND.owner}</span> ·
+            طنجة
           </p>
         </div>
       </div>

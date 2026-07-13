@@ -13,10 +13,12 @@ import type {
 export const BRAND: BrandProfile = {
   name: "TENDA BOX 8Q",
   tagline: "خبير الإلكترونيات والأنظمة الذكية",
-  phone: "+212600000000",
-  whatsapp: "212600000000",
+  owner: "Siraj Touzani",
+  phone: "0668 77 25 28",
+  phoneRaw: "+212668772528",
+  whatsapp: "212668772528",
   location: "طنجة، المغرب",
-  email: "contact@tendabox8q.ma",
+  email: "netfeur@gmail.com",
   tiktok: "https://www.tiktok.com/@tendabox8q",
   maps: "https://www.google.com/maps/search/?api=1&query=Tangier%2C%20Morocco",
 };
@@ -25,7 +27,7 @@ export const WHATSAPP_LINK = `https://wa.me/${BRAND.whatsapp}?text=${encodeURICo
   "مرحباً TENDA BOX 8Q، أرغب في الاستفسار عن خدماتكم."
 )}`;
 
-export const CALL_LINK = `tel:${BRAND.phone}`;
+export const CALL_LINK = `tel:${BRAND.phoneRaw}`;
 
 export const NAV_ITEMS: readonly NavigationItem[] = [
   { id: "home", label: "الرئيسية" },
