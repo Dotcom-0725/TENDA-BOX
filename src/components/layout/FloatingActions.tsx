@@ -1,5 +1,6 @@
 import { motion, AnimatePresence } from "framer-motion";
-import { MessageCircle, ArrowUp, PhoneCall } from "lucide-react";
+import { ArrowUp, PhoneCall } from "lucide-react";
+import WhatsAppIcon from "../ui/WhatsAppIcon";
 import { useScrollThreshold } from "../../hooks/useScrollThreshold";
 import { CALL_LINK, WHATSAPP_LINK } from "../../lib/site";
 
@@ -21,7 +22,7 @@ export default function FloatingActions() {
           className="group relative flex items-center gap-2 rounded-full border border-gold/40 bg-gold/95 px-4 py-3.5 text-ink shadow-gold transition-transform duration-300 hover:scale-105"
         >
           <span className="pointer-events-none absolute inset-0 -z-10 animate-ping rounded-full bg-gold/40" />
-          <MessageCircle className="h-5 w-5" />
+          <WhatsAppIcon className="h-5 w-5" />
           <span className="max-w-0 overflow-hidden whitespace-nowrap text-sm font-bold transition-all duration-300 group-hover:max-w-[120px] focus-visible:max-w-[120px]">
             واتساب
           </span>

@@ -1,4 +1,5 @@
-import { MessageCircle, Phone, MapPin, Mail, Music2, Map } from "lucide-react";
+import { Phone, MapPin, Mail, Music2, Map } from "lucide-react";
+import WhatsAppIcon from "../ui/WhatsAppIcon";
 import { BRAND, NAV_ITEMS, SERVICES, WHATSAPP_LINK } from "../../lib/site";
 
 export default function Footer() {
@@ -82,7 +83,7 @@ export default function Footer() {
                   rel="noopener noreferrer"
                   className="flex items-center gap-3 text-sm text-white/60 transition-colors hover:text-gold-soft"
                 >
-                  <MessageCircle className="h-4 w-4 text-gold" /> واتساب
+                  <WhatsAppIcon className="h-4 w-4 text-gold" /> واتساب
                 </a>
               </li>
               <li className="flex items-center gap-3 text-sm text-white/60">

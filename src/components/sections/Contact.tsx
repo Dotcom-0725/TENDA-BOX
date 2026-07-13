@@ -4,7 +4,6 @@ import {
   AlertCircle,
   CheckCircle2,
   Phone,
-  MessageCircle,
   MapPin,
   Mail,
   Send,
@@ -13,6 +12,7 @@ import {
 } from "lucide-react";
 import SectionHeading from "../ui/SectionHeading";
 import Reveal from "../ui/Reveal";
+import WhatsAppIcon from "../ui/WhatsAppIcon";
 import MapPlaceholder from "./MapPlaceholder";
 import { BRAND, WHATSAPP_LINK } from "../../lib/site";
 
@@ -26,7 +26,7 @@ const INFO = [
     href: `tel:${BRAND.phoneRaw}`,
   },
   {
-    icon: MessageCircle,
+    icon: WhatsAppIcon,
     label: "واتساب",
     value: "متاح 24/7",
     href: WHATSAPP_LINK,
