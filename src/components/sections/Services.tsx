@@ -7,6 +7,8 @@ import {
   ScanLine,
   ShieldCheck,
   Settings2,
+  PlugZap,
+  SatelliteDish,
   Check,
 } from "lucide-react";
 import SectionHeading from "../ui/SectionHeading";
@@ -21,6 +23,8 @@ const ICONS: Record<string, typeof Tv> = {
   ScanLine,
   ShieldCheck,
   Settings2,
+  PlugZap,
+  SatelliteDish,
 };
 
 const EASE: [number, number, number, number] = [0.22, 1, 0.36, 1];

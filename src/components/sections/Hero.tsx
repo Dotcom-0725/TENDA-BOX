@@ -12,6 +12,15 @@ const fadeUp = {
   }),
 };
 
+const HERO_TAGS = [
+  "تلفزيونات",
+  "كاميرات مراقبة",
+  "IPTV",
+  "كهرباء",
+  "بارابولات",
+  "رسيفرات",
+] as const;
+
 export default function Hero() {
   return (
     <section
@@ -47,9 +56,12 @@ export default function Hero() {
             initial="hidden"
             animate="visible"
             variants={fadeUp}
-            className="mt-5 text-3xl font-extrabold leading-[1.2] text-white sm:text-4xl md:text-5xl"
+            className="mt-5 text-[1.75rem] font-extrabold leading-[1.3] text-white sm:text-4xl sm:leading-[1.25] md:text-[2.85rem]"
           >
-            خبير في إصلاح وتركيب التلفزيونات والكاميرات وأنظمة IPTV
+            خبير في إصلاح وتركيب{" "}
+            <span className="text-gold-gradient">التلفزيونات</span> والكاميرات
+            وأنظمة <span className="text-gold-gradient">IPTV</span> و
+            <span className="text-gold-gradient">الكهرباء</span> والبارابولات
           </motion.h2>
 
           <motion.p
@@ -60,11 +72,30 @@ export default function Hero() {
             className="mt-6 max-w-2xl text-lg leading-relaxed text-white/70"
           >
             نقدم حلولاً احترافية وسريعة لإصلاح جميع أنواع التلفزيونات، تركيب كاميرات
-            المراقبة وإعداد خدمات IPTV بمدينة طنجة.
+            المراقبة، إعداد خدمات IPTV، الأعمال الكهربائية وتركيب البارابولات بمدينة طنجة.
           </motion.p>
 
-          <motion.div
+          <motion.ul
             custom={3}
+            initial="hidden"
+            animate="visible"
+            variants={fadeUp}
+            aria-label="اختصاصات TENDA BOX 8Q"
+            className="mt-6 flex flex-wrap gap-2"
+          >
+            {HERO_TAGS.map((tag) => (
+              <li
+                key={tag}
+                className="inline-flex items-center gap-1.5 rounded-full border border-gold/25 bg-gold/5 px-3 py-1 text-xs font-semibold text-gold-soft"
+              >
+                <span className="h-1.5 w-1.5 rounded-full bg-gold/80" />
+                {tag}
+              </li>
+            ))}
+          </motion.ul>
+
+          <motion.div
+            custom={4}
             initial="hidden"
             animate="visible"
             variants={fadeUp}

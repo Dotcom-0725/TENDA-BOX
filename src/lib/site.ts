@@ -97,6 +97,20 @@ export const SERVICES: readonly Service[] = [
     items: ["ضبط القنوات", "تهيئة الإشارة", "إعدادات ذكية"],
     img: "/images/service-smart-tv.jpg",
   },
+  {
+    icon: "PlugZap",
+    title: "الأعمال الكهربائية",
+    desc: "تمديدات وصيانة كهربائية آمنة للمنازل والمحلات، بمعايير تحمي أجهزتك وعائلتك.",
+    items: ["تمديدات آمنة", "صيانة الأعطال", "لوحات وقواطع"],
+    img: "/images/service-led-oled.jpg",
+  },
+  {
+    icon: "SatelliteDish",
+    title: "تركيب البارابولات",
+    desc: "تركيب وتوجيه البارابولات بدقة عالية لالتقاط أفضل إشارة وصورة واضحة لكل القنوات.",
+    items: ["توجيه دقيق", "إشارة قوية", "دعم بعد التركيب"],
+    img: "/images/service-parabola.svg",
+  },
 ];
 
 export const WHY_CHOOSE: readonly TrustItem[] = [
